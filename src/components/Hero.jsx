@@ -1,4 +1,5 @@
 import {Link} from 'react-router-dom';
+import  landingImage from "../assets/landingImage.png";
 export const Hero = ()=>{
 
     return(
@@ -16,7 +17,7 @@ export const Hero = ()=>{
             </div>
             {/* right side image or logo */}
             <div className="w-full md:w-[40%] ">
-                <img className="object-contain h-60 md:h-93 mx-auto" src="/landingImage.png" alt="" />
+                <img className="object-contain h-60 md:h-93 mx-auto" src={landingImage} alt="" />
             </div>
 
         </section>
