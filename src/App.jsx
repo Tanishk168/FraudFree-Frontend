@@ -29,7 +29,7 @@ function App() {
       {/* main wrapper for whole page */}
       <main className="scroll-smooth min-h-screen pt-[10vh] top-0 w-full bg-gradient-to-t from-[#12043C] to-[#0B0121]  backdrop-blur-xl ">
         <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/FraudFree/" element={<Home />} />
         <Route path="/report" element={<Report />} />
         <Route path="/browseReports" element={<BrowseReports />} />
         <Route path="/adminPanel" element={<AdminPanel />} />
