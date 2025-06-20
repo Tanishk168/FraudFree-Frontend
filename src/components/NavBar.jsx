@@ -51,7 +51,7 @@ export const NavBar = ({ menuOpen, setMenuOpen }) => {
   }`}
       >
         <Link
-          to="/FraudFree/"
+          to="/"
           className="text-gray-300 hover:text-white transition-all duration-300 hover:bg-purple-900 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 px-3 rounded-md"
           onClick={() => setMenuOpen(false)}
         >
@@ -91,7 +91,7 @@ overflow-hidden"
       {/* menu div initially hidden but flex for md or higher */}
       <div className="hidden md:flex justify-center items-center gap-1.5 md:gap-3 font-bold text-xl md:text-xl font-mono">
         <NavLink
-          to="/FraudFree/"
+          to="/"
           href="#Home"
           className="text-gray-300 hover:text-white transition-all  hover:-translate-y-1 hover:bg-purple-900 focus:outline-2 focus:outline-offset-2 focus:outline-violet-500 px-2 rounded-md duration-300"
         >
