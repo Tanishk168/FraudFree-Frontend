@@ -11,7 +11,7 @@ export const Report = () => {
   const onSubmit = async (data) => {
     console.log("form submitted")
   try {
-    const response = await axiosInstance.post("https://jsonplaceholder.typicode.com/posts", data);
+    const response = await axiosInstance.post("/api/report", data);
     
     if (response.status === 200 || response.status === 201 ) {
       alert("Report submitted successfully!");
@@ -28,10 +28,10 @@ export const Report = () => {
     <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-[#0B0121] to-[#12043C] py-16 px-4">
       <form
         onSubmit={handleSubmit(onSubmit)}
-        className="w-full max-w-2xl bg-white/5 p-8 rounded-lg shadow-xl backdrop-blur-md     space-y-6 hover:-translate-y-1.5 transition-all hover:shadow-[0_0_25px_rgba(59,130,246,0.7)] mt-5"
+        className="w-full max-w-2xl bg-white/5 p-8 rounded-lg shadow-xl backdrop-blur-md     space-y-6 hover:-translate-y-1 transition-all hover:shadow-[0_0_10px_rgba(59,130,246,0.3)] mt-5"
       >
         <h2
-          className="text-3xl md:text-4xl font-bold text-center mb-10 
+          className="text-2xl md:text-3xl font-bold text-center mb-10 
             bg-gradient-to-r from-blue-400 via-purple-500 to-indigo-600 
                 bg-clip-text text-transparent 
                 tracking-wide drop-shadow-lg animate-fade-in"
@@ -175,14 +175,14 @@ export const Report = () => {
         <div className="text-center">
           <button
             type="submit"
-            className="bg-blue-600 hover:bg-blue-700 hover:shadow-[0_0_10px_rgba(59,130,246,0.7)] text-white px-6 py-2 rounded-lg transition duration-300 hover:-translate-y-1.5 "
+            className="bg-blue-600 hover:bg-blue-700 hover:shadow-[0_0_15px_rgba(59,130,246,0.3)] text-white px-6 py-2 rounded-lg transition duration-300 hover:-translate-y-1 "
           >
             Submit Report
           </button>
           <button
             type="button"
             onClick={() => reset()}
-            className="font-medium text-sm md:text-lg m-2 px-4 py-2 border border-blue-500/50 rounded-lg text-white bg-blue-400/10 hover:bg-blue-400/20 hover:-translate-y-1.5 transition-all hover:shadow-[0_0_10px_rgba(59,130,246,0.7)]"
+            className="font-medium text-sm md:text-lg m-2 px-4 py-2 border border-blue-500/50 rounded-lg text-white bg-blue-400/10 hover:bg-blue-400/20 hover:-translate-y-1 transition-all hover:shadow-[0_0_10px_rgba(59,130,246,0.3)]"
           >
             Reset
           </button>

@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import { Link } from "react-router-dom";
-
 import ShieldLogo from "../assets/shield.png";
 
 export const NavBar = ({ menuOpen, setMenuOpen }) => {
@@ -14,9 +13,8 @@ export const NavBar = ({ menuOpen, setMenuOpen }) => {
   //     document.body.style.overflow = "auto";   // Allows normal scroll
   //   }
   // }, [menuOpen]);
-
   return (
-    <nav className=" fixed top-0  w-full shadow-xl bg-transparent border-b border-b-gray-300 flex items-center justify-between px-4 py-2 md:py-4   z-40 backdrop-blur-lg ">
+    <nav className=" fixed top-0  w-full shadow-xl bg-transparent border-b border-b-gray-300 flex items-center justify-between px-4 py-2 md:py-4   z-40 backdrop-blur-lg md:max-h-1/9 ">
       <div className="flex  gap-1 lg:gap-4 items-center  font-medium">
         <img src={ShieldLogo} alt="logo" className="w-10 h-10 object-contain" />
 
