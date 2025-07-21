@@ -110,12 +110,13 @@ const BrowseReports = () => {
                   <Link to={`/browseReports/viewReport/${report._id}`} className="text-sm px-3 py-1 bg-blue-600 text-white rounded hover:bg-blue-700">
                     View
                   </Link>
-                  <button
+                  {/* Uncomment when auth is added */}
+                  {/* <button
                     onClick={() => handleDelete(report._id)}
                     className="text-sm px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700"
                   >
                     Delete
-                  </button>
+                  </button> */}
                 </div>
               </div>
             ))}
